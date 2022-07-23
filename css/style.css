@@ -95,10 +95,8 @@ body {
   text-decoration: none;
 }
 .sidemenu a .active {
-  color: white;
   border: 5px;
   border-radius: 15px;
-  color: white;
 }
 
 a:hover {

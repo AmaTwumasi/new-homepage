@@ -36,11 +36,11 @@ body {
       box-shadow: 1px 0px 10px #dedbe6;
 
       &:hover {
-       background-image: linear-gradient(
-        to right,
-        rgb(191, 109, 207),
-        rgb(66, 20, 172)
-      );
+        background-image: linear-gradient(
+          to right,
+          rgb(191, 109, 207),
+          rgb(66, 20, 172)
+        );
         border-radius: 15px;
         transition: all 200ms ease-in-out;
       }
@@ -109,10 +109,8 @@ body {
     padding: 14px;
     text-decoration: none;
     .active {
-      color: white;
       border: 5px;
       border-radius: 15px;
-      color: white;
     }
   }
 }
