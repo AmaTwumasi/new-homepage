@@ -63,6 +63,7 @@ section marquee .swipe {
   border-radius: 30px;
   margin-top: 70px;
   cursor: pointer;
+  border: 2px solid rgb(132, 199, 9);
 }
 section marquee .swipe .links {
   color: white;
@@ -95,8 +96,7 @@ section .overlay {
 section .overlay .sidemenu {
   position: relative;
   margin-top: 50px;
-  text-align: center;
-  opacity: 0.3;
+  text-align: left;
   font-family: "Nunito Sans", sans-serif;
 }
 section .overlay .sidemenu a {
@@ -114,7 +114,8 @@ section .overlay .sidemenu a .active {
 }
 section .overlay .sidemenu a:hover {
   color: white;
-  background-color: rgb(162, 145, 204);
+  border: 1px solid green;
+  background-image: linear-gradient(to right, rgb(133, 65, 146), rgb(66, 20, 172));
   box-shadow: 1px 0px 10px #dedbe6;
   border-radius: 15px;
   transition: all 200ms ease-in-out;
@@ -158,17 +159,6 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
   display: none;
-}
-
-.sub-text {
-  display: flex;
-  position: relative;
-  left: 270px;
-  top: -50px;
-  font-size: 28px;
-  font-family: "Nunito Sans", sans-serif;
-  text-align: center;
-  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 700px) {
