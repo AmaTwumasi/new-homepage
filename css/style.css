@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
-  background-image: linear-gradient(to right, rgb(77, 28, 87), rgb(39, 12, 104));
+  background-image: linear-gradient(to right, #130d34, #130d34);
 }
 
 .header {
@@ -15,95 +14,143 @@ body {
   left: -750px;
 }
 .header .side-buttons {
-  padding: 5px;
+  padding: 2px;
   border: 5px;
   border-radius: 15px;
 }
 .header .side-buttons .button {
-  margin: 8px;
+  margin: 5px;
   height: 40px;
-  background-image: linear-gradient(to right, rgb(77, 28, 87), rgb(39, 12, 104));
+  background-color: #481a59;
   color: white;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid rgb(132, 199, 9);
   border-radius: 10px;
   font-size: 10px;
-  box-shadow: 1px 0px 10px #dedbe6;
+  font-family: "Nunito Sans", sans-serif;
 }
 .header .side-buttons .button:hover {
   background-image: linear-gradient(to right, rgb(191, 109, 207), rgb(66, 20, 172));
-  border-radius: 15px;
+  box-shadow: 1px 0px 10px #dedbe6;
+  border-radius: 10px;
   transition: all 200ms ease-in-out;
 }
 .header .side-buttons #connect {
-  font-size: 18px;
-  padding: 0px 40px;
+  font-size: 15px;
+  padding: 0px 25px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-#top {
+section {
   display: flex;
 }
-#top h1 {
+section h1 {
   position: relative;
   top: 70px;
-  left: 130px;
+  left: 140px;
   color: white;
-  font-size: 43px;
-  width: 45%;
-  margin-left: 120px;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  width: 70%;
+  margin-left: 130px;
 }
-#top marquee {
-  width: 35%;
+section marquee {
+  width: 100%;
 }
-#top .swipe {
-  position: relative;
-  top: 70px;
-  padding: 20px;
+section marquee .swipe {
+  background-color: rgb(14, 34, 73);
+  opacity: 0.3;
+  border-radius: 30px;
+  margin-top: 70px;
+  cursor: pointer;
+}
+section marquee .swipe .links {
+  color: white;
+  padding: 10px;
   text-align: center;
   border: 2px;
-  margin-right: 20px;
-  width: 190px;
-  height: 300px;
-  border-radius: 15px;
-  background-image: linear-gradient(to right, rgb(63, 24, 70), rgb(35, 11, 92));
+  height: 250px;
 }
-#top .swipe a {
+section marquee .swipe .links a {
   display: block;
   color: white;
-  padding: 14px;
+  padding: 1px;
   text-decoration: none;
-  height: 10px;
   font-size: 28px;
+  font-family: "Nunito Sans", sans-serif;
 }
-
-.sidemenu {
-  margin-top: 80px;
-  margin-left: 10px;
-  padding: 10px;
-  border: 5px;
-  border-radius: 15px;
-  width: 170px;
-  background-image: linear-gradient(to right, rgb(63, 24, 70), rgb(35, 11, 92));
+section .overlay {
+  height: 60%;
+  width: 0%;
   position: fixed;
-  height: 37%;
-  overflow: auto;
+  top: 175px;
+  left: 10px;
+  z-index: 1;
+  background-color: rgb(14, 34, 73);
+  overflow-x: hidden;
+  transition: 0.5s;
+  border: 2px;
+  border-radius: 30px;
 }
-.sidemenu a {
-  display: block;
-  color: white;
-  padding: 14px;
+section .overlay .sidemenu {
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0.3;
+  font-family: "Nunito Sans", sans-serif;
+}
+section .overlay .sidemenu a {
+  padding: 8px;
   text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
-.sidemenu a .active {
+section .overlay .sidemenu a .active {
   border: 5px;
   border-radius: 15px;
-}
-
-a:hover {
-  background-color: rgb(185, 117, 202);
   color: white;
-  border: 5px;
+}
+section .overlay .sidemenu a:hover {
+  color: white;
+  background-color: rgb(162, 145, 204);
+  box-shadow: 1px 0px 10px #dedbe6;
   border-radius: 15px;
+  transition: all 200ms ease-in-out;
+}
+section .overlay .closebtn {
+  position: absolute;
+  right: 45px;
+  left: 110px;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+section .openbtn {
+  display: block;
+  height: 100px;
+  width: 30px;
+  top: 200px;
+  right: 45px;
+  left: 100px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+@media screen and (max-height: 450px) {
+  section .overlay a {
+    font-size: 20px;
+  }
+  section .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 div.content {
@@ -116,34 +163,12 @@ div.content {
 .sub-text {
   display: flex;
   position: relative;
-  left: 230px;
+  left: 270px;
+  top: -50px;
   font-size: 28px;
+  font-family: "Nunito Sans", sans-serif;
   text-align: center;
-  color: rgb(145, 233, 44);
-}
-
-.search-bar {
-  margin-top: 80px;
-  margin-left: 250px;
-  width: 170px;
-}
-.search-bar #text {
-  padding: 8px;
-  width: 250px;
-  border: 2px solid rgb(238, 241, 13);
-  border-radius: 5px;
-  background-image: linear-gradient(to right, rgb(101, 50, 110), rgb(72, 38, 150));
   color: rgb(255, 255, 255);
-  font-size: 15px;
-}
-
-p {
-  color: white;
-  margin-top: 40px;
-  margin-left: 180px;
-  margin-right: 180px;
-  display: none;
-  font-size: 20px;
 }
 
 @media screen and (max-width: 700px) {

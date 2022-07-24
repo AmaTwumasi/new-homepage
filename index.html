@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1be0380ff8.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
@@ -27,30 +33,48 @@
 </header>
 </div>
     <section>
-      <div id="top">
+      
+      <div id="top" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="sidemenu">
-          <a class="active" href="#home">Home</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+          <a class="active" href="#home">home</a>
+          <a href="#news"></i>Dashboard</a>
+          <a href="#contact"></i>Campaign</a>
+          <a href="#about">Referral Team</a>
+          <a href="#chat-team">Chat Team</a>
+          <a href="#rewards">Rewards</a>
+          <a href="#profile">Profile</a>
         </div>
+        </div>
+        <span style="font-size:50px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
         <div>
-          <h1>The First Decentralized Autonomous Organization With ...</h1>
+          <h1>A DAO powering lifetime benefits and rewards for our members through a visionary treasury UNIFIN Trust system</h1>
         </div>
-        <marquee>
-  <div class="row">
+       
+ <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> 
+<div class="row">
     <div class="col-sm-6">
+      
         <div class="swipe">
+    
+     <div class="links">
       <a href="#Information">Information</a>
       </div>
+    </div> 
+    
     </div>
+
     <div class="col-sm-6">
-      <div class="swipe">
+       
+        <div class="swipe">
+        <div class="links">
       <a href="#News">News</a>
     </div>
+  </div>
+  
 </div>
 </div>
-    </marquee>
+</marquee>
 
     
     </section>
@@ -71,17 +95,25 @@
          NO WHALES.....
 NO COIN DUMPS
     </div>
-    <div>
-    <form class="search-bar">
-        <input type="text" id="text" placeholder="search...." />
-    </form>
-    </div>
-    <p>
-        As global elites and governments maneuver to implement a new digital monetary system termed “the Great Reset,” the world’s legacy monetary system seems likely to fall right off a cliff and take many of us with it. Unifin, endeavors to absorb the impact of this painful transition for its members through the creation of a decentralized autonomous organization, which uses a democratic governance 
-        system that allows member benefits to evolve over time and fund itself in a sustainable way through a visionary treasury system.
-<br /> <br /> <br />
-We, like Cardano, also want to “redistribute power from unaccountable structures and be 
-a force for positive change and progress". As such, ePHI token awards are not distributed to individual investors, developers and/or founders. All members are equal, and every proposal is voted on by members prior to its execution. We are very proud to have built the first open-source economics platform that accumulates assets in a trustless manner to provide lifetime benefits and token rewards for our community of members.
-    </p>
+
+
+
+    <!-- give the sidemenu the same effect as the ripple menu but not full screen
+    add some icons from font awesome to the sidemenu
+    
+    the sidemenu should have the same colors as the sudae page (both hover and active}//
+   the marquee hover should stop
+    -->
+   
+    
+     <script>
+function openNav() {
+  document.getElementById("top").style.width = "18%";
+}
+
+function closeNav() {
+  document.getElementById("top").style.width = "0%";
+}
+</script>
   </body>
 </html>
